@@ -1,0 +1,197 @@
+
+body{
+  overflow-x: hidden;
+}
+
+.row{
+  margin:0px;
+}
+
+.col-sm-10{
+  padding: 0px;
+}
+
+.app-container{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+
+}
+
+.hide{
+  display: none !important;
+}
+
+.show{
+  display: block !important;
+}
+
+
+#map {
+  height:100vh;
+  width: 100%;
+  }
+
+.banner{
+  width:100%;
+  height:80px;
+  background-color:#60bc50;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  display: table;
+}
+
+.banner__logo{
+  height: 41px;
+  margin-top: 5px;
+}
+
+.banner__github{
+  height: 41px;
+  float: right;
+  margin-right: 20px;
+}
+
+#locationForm{
+  z-index: 200;
+  width:340px;
+  position:absolute;
+  top:114px;
+  left:5%;
+  background-color: #eeeeee;
+  padding: 16px;
+  padding-left: 3px;
+  /*border-radius: 5px;*/
+  border: solid 2px #60bc4e;
+  color: #727171;
+}
+
+
+.input-block{
+  position: relative;  
+}
+
+.input-block label{
+  padding-left:17px;
+}
+
+.input-block input{
+  height:47px;
+}
+
+.input-block__form-control-clear{
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  right: 12px;
+  background-color: #ffffff;
+  height: 45px;
+  /*width: 47px;*/
+  padding: 10px 16px;
+  padding-right: 0px;
+  color:#949494
+}
+
+.form-control:disabled{
+  cursor:not-allowed;
+  background-color: white;
+  font-size:16px;
+  opacity: 0.9;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+.form-control-clear {
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.origin-form{
+  margin-bottom:6px;
+}
+
+.booking-container{
+  border: solid 1px #ced4db;
+  margin-top: 4px;
+  background-color: white;
+  color:#727171;
+  padding: 18px 10px;
+  position: relative;
+}
+
+.delay {
+  font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 3s;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 0.1rem rgba(0,123,255,.25);
+}
+
+
+.form-control{
+  border-radius:0px;
+}
+
+.col-form-label{
+  color:#727171;
+}
+
+
+#verticalDots{
+  position: absolute;
+  top: 51px;
+  left: 27px;
+  color:#727171;
+  text-align: center;
+  padding-right:10px;
+}
+
+@media only screen and (max-width: 650px) {
+  #locationForm {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #eeeeee;
+    padding: 8px;
+    border: 0;
+    border-bottom: solid 1px #ced4dc;
+  }
+
+  #locationForm #mainForm label {
+    display: none;
+
+  }
+
+  #verticalDots{
+    display: none;
+  }
+
+  .form-group{
+    margin-bottom: 4px;
+  }
+
+
+  .booking-container{
+    margin-top:8px;
+  }
+
+
+  #map{
+    height:90vh;
+  }
+
+
+}
