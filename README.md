@@ -23,8 +23,11 @@ this.routeAnimation.animate(response);
 
 # Demo
 
-To run the demo, use 
+To run the demo
 
 ```
+git clone https://github.com/smaameri/animated-map-routes.git
+cd animated-map-routes
+npm install
 node server.js
 ```
